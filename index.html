@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="jquery.exzoom.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Magnifier Javascript Demo - jQuery</h1>
+    <div class="exzoom" id="exzoom">
+      <!-- Images -->
+      <div class="exzoom_img_box">
+        <ul class="exzoom_img_ul">
+          <li><img src="img1.jpg" /></li>
+          <li><img src="img2.jpg" /></li>
+          <li><img src="img3.jpg" /></li>
+          <li><img src="img4.jpg" /></li>
+        </ul>
+      </div>
+      <!-- <a href="https://www.jqueryscript.net/tags.php?/Thumbnail/">Thumbnail</a> Nav-->
+      <div class="exzoom_nav"></div>
+      <!-- Nav Buttons -->
+      <p class="exzoom_btn">
+        <a href="javascript:void(0);" class="exzoom_prev_btn"> < </a>
+        <a href="javascript:void(0);" class="exzoom_next_btn"> > </a>
+      </p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="jquery.exzoom.js"></script>
+    <script>
+      $(function () {
+        $("#exzoom").exzoom({
+          autoplay: false,
+        });
+      });
+    </script>
+  </body>
+</html>
